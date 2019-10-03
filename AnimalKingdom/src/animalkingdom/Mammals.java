@@ -13,24 +13,31 @@ public class Mammals extends Animals
     @Override 
     public String move()
     {
-        return walk;
+        return "walk";
     }
 
     @Override
     public String breathe()
     {
-        return lungs;
+        return "lungs";
     }
 
     @Override
     public String reproduce()
     {
-        return live births;
+        return "live births";
     }
 
+    // @Override
+    // public String toString()
+    // {
+    //     return "Mammals {" + "name: ' " + name + '\'' + ", year discovered: " + yearDiscovered + '}';
+    // }
     @Override
-    public String toString()
-    {
-        return "\nMammals {id: " + id + ", name: " + name + ", year discovered: " + yearDiscovered + ", movement: walk, breathing: lungs, reproduction: live births}";
-    }
+   public String toString()
+   {
+       return "Mammals{" +
+               "Name='" + name + '\'' +
+               ", Year =" + yearDiscovered + '}';
+   }
 }
